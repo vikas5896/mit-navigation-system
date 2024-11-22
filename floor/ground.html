@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ground floor</title>
+</head>
+<body>
+    <div class="container">
+      <div class="botx">
+        <p>Floor Plans</p>
+      </div>
+      <div class="box">
+        <a href="project.html" target="_blank">
+          <img src="house.png" alt="Box 1">
+        </a>
+      </div>
+      <div class="ground-floor">
+        <p>Ground Floor Map</p>
+        <!-- Include your map, for example, an iframe or image -->
+        <iframe src="G.png" width="100%" height="700" frameborder="0"></iframe>
+        <!-- Or if you have an image map -->
+        <!-- <img src="ground-floor-map.png" alt="Ground Floor Map" width="100%"> -->
+      </div>
+    </div>
+  </body>
+  
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url('home.webp') no-repeat center center/cover ;
+    color: white;
+    position: relative;
+   
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity with rgba */
+    z-index: -1; /* Keep it behind the content */
+  }
+
+
+
+.container {
+  width: 100%;
+  padding: 10px;
+  height: 65px;
+  border: none;
+  background-color: rgba(253, 253, 253, 0.7);
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+
+  }
+
+  .box {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .box a {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .box img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+  }
+  
+  .botx p{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-weight: bold;
+    color:rgb(0, 0, 0) ;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    right: 0;
+   
+
+  }
+
+  .ground-floor {
+  text-align: center;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+.ground-floor p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.ground-floor iframe {
+  border: 2px solid #fff; /* Optional, adds a border to the iframe */
+  border-radius: 10px;
+}
+
+.ground-floor img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+</style>
+</html>

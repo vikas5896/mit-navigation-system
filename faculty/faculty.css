@@ -1,0 +1,153 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url('home.webp') no-repeat center center/cover;
+  color: white;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(136, 135, 135, 0.504);
+  z-index: -1;
+}
+
+/* Container for Title and Box */
+.container {
+  width: 100%;
+  padding: 10px;
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0.909);
+  font-size: 16px;
+  color: rgb(117, 146, 162);
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+
+.box {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  right: 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.box a {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+}
+
+.botx p {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* -webkit-text-stroke: 2px rgb(0, 0, 0); */
+  font-weight: bold;
+  color: rgb(101, 129, 144);
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  left: 0;
+  right: 0;
+}
+
+  /* Search Box Section */
+  .search-box-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-box {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: rgb(117, 146, 162);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    background-color: #004d40;
+  }
+  
+  /* Faculty Boxes Section */
+  .faculty-boxes {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .faculty-box {
+    display: block;
+    width: 200px;
+    padding: 15px;
+    background-color: rgba(117, 146, 162, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .faculty-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+  }
+  

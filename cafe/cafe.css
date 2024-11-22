@@ -1,0 +1,150 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url('home.webp') no-repeat center center/cover;
+    color: white;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(136, 135, 135, 0.504);
+    z-index: -1;
+  }
+  
+  /* Container for Title and Box */
+  .container {
+    width: 100%;
+    padding: 10px;
+    height: 65px;
+    background-color: rgba(255, 255, 255, 0.909);
+    font-size: 16px;
+    color: rgb(117, 146, 162);
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+  }
+  
+  .box {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .box a {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .box img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+  }
+  
+  .botx p {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* -webkit-text-stroke: 2px rgb(0, 0, 0); */
+    font-weight: bold;
+    color: rgb(101, 129, 144);
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Cafe Name Section */
+ /* Cafe Name Section */
+.cafe-name {
+    margin: 20px 0;
+    font-size: 48px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: #ffffff; /* Gold color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow for depth */
+    text-align: center;
+  }
+  
+  
+  /* Cafe Image Section */
+  .image-section img {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* About Section */
+  .about {
+    max-width: 800px;
+    margin: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Location Box */
+  .location-box {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: rgb(117, 146, 162);
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .botx p {
+      font-size: 36px;
+    }
+  
+    .cafe-name {
+      font-size: 22px;
+    }
+  
+    .about {
+      font-size: 16px;
+    }
+  }
+  
